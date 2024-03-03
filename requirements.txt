@@ -7,5 +7,3 @@ colorama
 httpx
 bs4
 user_agent
-dotenv
-subprocess
