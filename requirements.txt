@@ -6,3 +6,4 @@ requests
 colorama
 httpx
 bs4
+user_agent
