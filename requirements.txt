@@ -1,0 +1,17 @@
+discord
+nextcord
+os
+sys
+requests
+flask
+colorama
+httpx
+bs4
+user_agent
+time
+json
+rgbprint
+re
+secrets
+datetime
+certifl
