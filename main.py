@@ -18,8 +18,22 @@ from httpx import Client
 from bs4 import BeautifulSoup as bs
 from user_agent import generate_user_agent
 from requests import Session, post, get
+from flask import Flask, render_template
+from threading import Thread
+from dotenv import load_dotenv
+app = Flask('')
+@app.route('/')
+def home():
+  return "bot python is online!"
+def index():
+  return render_template("index.html")
+def run():
+  app.run(host='0.0.0.0', port=8080)
+def high():
+  t = Thread(target=run)
+  t.start()
 
-token = os.environ['bot']
+token = os.environ.get['bot']
 bots = token
 
 config = json.load(open('./highzy_store_config.json', 'r', encoding='utf-8'))
@@ -292,16 +306,7 @@ async def on_ready():
     bot.add_view(setupView())
     system('cls')
     gradient_print(f"""
-
-▄▄▄▄· ▄▄▌   ▄▄▄·  ▄▄· ▄ •▄   • ▌ ▄ ·.  ▄▄▄· ▄▄▄  ▄ •▄ ▄▄▄ .▄▄▄▄▄  
-▐█ ▀█▪██•  ▐█ ▀█ ▐█ ▌▪█▌▄▌▪  ·██ ▐███▪▐█ ▀█ ▀▄ █·█▌▄▌▪▀▄.▀·•██    
-▐█▀▀█▄██ ▪ ▄█▀▀█ ██ ▄▄▐▀▀▄·  ▐█ ▌▐▌▐█·▄█▀▀█ ▐▀▀▄ ▐▀▀▄·▐▀▀▪▄ ▐█.▪  
-██▄▪▐█▐█▌ ▄▐█▪ ▐▌▐███▌▐█.█▌  ██ ██▌▐█▌▐█▪ ▐▌▐█•█▌▐█.█▌▐█▄▄▌ ▐█▌·  
-·▀▀▀▀ .▀▀▀  ▀  ▀ ·▀▀▀ ·▀  ▀  ▀▀  █▪▀▀▀ ▀  ▀ .▀  ▀·▀  ▀ ▀▀▀  ▀▀▀   
-
-         
-
- BY : Highzy           
+            : Highzy           
 
             [LOGIN AS]: {bot.user}             
 """,
@@ -332,5 +337,5 @@ async def setup(interaction: nextcord.Interaction):
     await interaction.response.send_message(content=':Check~1:', ephemeral=True)
 
 
-
+high()
 bot.run(bots)
