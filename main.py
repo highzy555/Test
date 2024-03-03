@@ -20,7 +20,6 @@ from user_agent import generate_user_agent
 from requests import Session, post, get
 from flask import Flask, render_template
 from threading import Thread
-from dotenv import load_dotenv
 app = Flask('')
 @app.route('/')
 def home():
