@@ -331,6 +331,6 @@ async def setup(interaction: nextcord.Interaction):
 ** ถ้าต้องการชำระเงินผ่านธนาคาร เปิดตั๋วมาได้เลยครับ || @everyone || **''')
     await interaction.response.send_message(content=':Check~1:', ephemeral=True)
 
-keep_alive()
+
 
 bot.run(bots)
