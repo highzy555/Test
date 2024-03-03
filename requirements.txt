@@ -4,3 +4,5 @@ nextcord
 rgbprint
 requests
 colorama
+httpx
+bs4
