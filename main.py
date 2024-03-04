@@ -31,7 +31,7 @@ def run():
 def high():
   t = Thread(target=run)
   t.start()
-
+high()
 token = os.environ.get('bot')
 bots = token
 
@@ -302,10 +302,11 @@ class setupView(nextcord.ui.View):
 
 @bot.event
 async def on_ready():
-    bot.add_view(setupView())
-    system('cls')
-    print("bot online")
-    await bot.change_presence(activity=nextcord.Streaming(name="ตลาดมืด", url="https://www.twitch.tv/example_channel"))
+  bot.add_view(setupView())
+  system('cls')
+  print(f"Bot {bot.user.name} is ready!")
+  await bot.change_presence(activity=nextcord.Streaming(
+      name='Black Market !', url='https://www.twitch.tv/example_channel'))
 
 @bot.slash_command(
     name='setup',
@@ -329,5 +330,5 @@ async def setup(interaction: nextcord.Interaction):
     await interaction.response.send_message(content=':Check~1:', ephemeral=True)
 
 
-high()
+
 bot.run(bots)
