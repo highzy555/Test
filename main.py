@@ -32,7 +32,7 @@ def high():
   t = Thread(target=run)
   t.start()
 
-token = os.environ["bot"]
+token = os.environ.get('bot')
 bots = token
 
 config = json.load(open('./highzy_store_config.json', 'r', encoding='utf-8'))
