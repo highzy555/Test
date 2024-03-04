@@ -304,14 +304,7 @@ class setupView(nextcord.ui.View):
 async def on_ready():
     bot.add_view(setupView())
     system('cls')
-    gradient_print(f"""
-            : Highzy           
-
-            [LOGIN AS]: {bot.user}             
-""",
-   start_color=Color.purple,
-   end_color=Color.blue
-)
+    print("bot online")
     await bot.change_presence(activity=nextcord.Streaming(name="ตลาดมืด", url="https://www.twitch.tv/example_channel"))
 
 @bot.slash_command(
