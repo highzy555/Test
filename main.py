@@ -285,7 +285,7 @@ class setupView(nextcord.ui.View):
         return await interaction.response.send_message(embed=embed, ephemeral=True)
 
     @nextcord.ui.button(
-        emoji='🐙',
+        emoji='<a:34:1135479872374968391>',
         label=' วิธีใช้',
         custom_id='how',
         style=nextcord.ButtonStyle.primary,
