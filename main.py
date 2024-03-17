@@ -296,8 +296,8 @@ class setupView(nextcord.ui.View):
         embed = nextcord.Embed(description='''> __**วิธีเติมเงิน**__ กดเติมเงินและนำลิ้งค์ซองไปกรอกในช่องที่ให้ 
         
 > __**วิธีซื้อสินค้า**__ กดไปที่คำว่า [ 🛒 เลือกยศที่คุณต้องการซื้อ ] และเลือกสินค้าที่ต้องการซื้อ และกดยืนยันการซื้อยศอีกครั้ง''', color=0x7300ff)
-        embed.set_image(url='https://cdn.discordapp.com/attachments/1153966496150736928/1198262788657778848/IMG_20240118_133437.png?ex=65be442f&is=65abcf2f&hm=9106d332802925e0d4e3985d67d8289c0d386d6ca26c8043354171f29440662e&')
-        embed.set_footer(text='© 2024 Black Market! All rights reserved', icon_url='https://cdn.discordapp.com/attachments/1153966496150736928/1198262788657778848/IMG_20240118_133437.png?ex=65be442f&is=65abcf2f&hm=9106d332802925e0d4e3985d67d8289c0d386d6ca26c8043354171f29440662e&')
+        embed.set_image(url='https://cdn.discordapp.com/attachments/1169309802955026494/1218996282623004824/received_381012028110357.jpg?ex=6609b1c1&is=65f73cc1&hm=f571076d27581361cb6342a11346e920e38dd3aade7fc5d36cbbf7b0ca17b7ea&')
+        embed.set_footer(text='© 2024 Black Market! All rights reserved', icon_url='https://cdn.discordapp.com/attachments/1169309802955026494/1218996282623004824/received_381012028110357.jpg?ex=6609b1c1&is=65f73cc1&hm=f571076d27581361cb6342a11346e920e38dd3aade7fc5d36cbbf7b0ca17b7ea&')
         return await interaction.response.send_message(embed=embed, ephemeral=True)
 
 @bot.event
