@@ -296,8 +296,8 @@ class setupView(nextcord.ui.View):
         embed = nextcord.Embed(description='''> __**วิธีเติมเงิน**__ กดเติมเงินและนำลิ้งค์ซองไปกรอกในช่องที่ให้ 
         
 > __**วิธีซื้อสินค้า**__ กดไปที่คำว่า [ 🛒 เลือกยศที่คุณต้องการซื้อ ] และเลือกสินค้าที่ต้องการซื้อ และกดยืนยันการซื้อยศอีกครั้ง''', color=0x7300ff)
-        embed.set_image(url='https://cdn.discordapp.com/attachments/1169309802955026494/1218996282623004824/received_381012028110357.jpg?ex=6609b1c1&is=65f73cc1&hm=f571076d27581361cb6342a11346e920e38dd3aade7fc5d36cbbf7b0ca17b7ea&')
-        embed.set_footer(text='© 2024 Black Market! All rights reserved', icon_url='https://cdn.discordapp.com/attachments/1169309802955026494/1218996282623004824/received_381012028110357.jpg?ex=6609b1c1&is=65f73cc1&hm=f571076d27581361cb6342a11346e920e38dd3aade7fc5d36cbbf7b0ca17b7ea&')
+        embed.set_image(url='https://cdn.discordapp.com/attachments/1169309802955026494/1219000309540585492/truemoney-wallet.png?ex=6609b581&is=65f74081&hm=4a794a5230b9e462810f0600c575693f8d54b6aa0a715b54459bb060becb6a8d&')
+        embed.set_footer(text='© 2024 Black Market! All rights reserved', icon_url='https://cdn.discordapp.com/attachments/1169309802955026494/1219000309540585492/truemoney-wallet.png?ex=6609b581&is=65f74081&hm=4a794a5230b9e462810f0600c575693f8d54b6aa0a715b54459bb060becb6a8d&')
         return await interaction.response.send_message(embed=embed, ephemeral=True)
 
 @bot.event
