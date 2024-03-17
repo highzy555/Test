@@ -317,9 +317,9 @@ async def setup(interaction: nextcord.Interaction):
     if (interaction.user.id not in config['ownerIds']):
         return await interaction.response.send_message(content='[ERROR] No Permission For Use This Command.', ephemeral=True)
     embed = nextcord.Embed()
-    embed.set_image(url='https://cdn.discordapp.com/attachments/1186277649035841536/1186303385578778654/topup.png?ex=6592c21f&is=65804d1f&hm=141f4fc86ab69e95f53a4b9b2f504e8feece4f5079eb61492a0676091be9eab9&')
+    embed.set_image(url='https://cdn.discordapp.com/attachments/1217085743005044786/1219002707172524162/1422685976-5cm-o.jpg?ex=6609b7bd&is=65f742bd&hm=54dbc70bfa7c8869e688cb53c320e5f17ae565f8d788068160920e3dd9245d0a&')
     embed.title = '**Black Market! ซื้อยศผ่านบอทอัตโนมัติ**'
-    embed.set_footer(text='© 2024 Black Market! All rights reserved', icon_url='https://cdn.discordapp.com/attachments/1168590553127067659/1180531764167454771/standard_1.gif?ex=657dc2e1&is=656b4de1&hm=b0b9f434cd611c3ae6842028592c293ac4c9458d12d6afe8a5de1913a677cc71&')
+    embed.set_footer(text='© 2024 Black Market! All rights reserved', icon_url='https://cdn.discordapp.com/attachments/1217085743005044786/1219002707172524162/1422685976-5cm-o.jpg?ex=6609b7bd&is=65f742bd&hm=54dbc70bfa7c8869e688cb53c320e5f17ae565f8d788068160920e3dd9245d0a&')
     embed.color = 0x7300ff 
     await interaction.channel.send(embed=embed, view=setupView())    
     await interaction.channel.send('''>>> ** # ซื้อยศผ่านบอทอัตโนมัติ ไม่ต้องรอแอดมิน **
