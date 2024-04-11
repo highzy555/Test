@@ -43,6 +43,14 @@ bots = token
 name = os.environ.get('name')
 log_channel_id = os.environ.get('id')
 
+try:
+    os.mkdir("data")
+except FileExistsError:
+    print("โฟลเดอร์มีอยู่แล้ว")
+else:
+    print("สร้างโฟลเดอร์สำเร็จ")
+
+
 config = json.load(open('./highzy_store_config.json', 'r', encoding='utf-8'))
 
 bot = commands.Bot(
