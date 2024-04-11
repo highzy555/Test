@@ -39,6 +39,7 @@ def high():
   t.start()
 high()
 token = os.environ.get('bot')
+bots = token
 name = os.environ.get('name')
 log_channel_id = os.environ.get('id')
 
