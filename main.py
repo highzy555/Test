@@ -450,7 +450,7 @@ async def setup(ctx: Interaction):
     if ctx.author.name == name:
         await ctx.message.delete()
         embed = Embed(title="** __BOTSAVEROLEAUTO__ **",
-                      description="** ซื้อยศแล้ว อย่าลืมมาเซฟยศกันนะครับ\nกันพวกเบียวมายิงดิสงับ **",
+                      description="** ซื้อยศแล้ว อย่าลืมมาเซฟยศกันนะครับ/nกันหลุดออกจากดิส ไม่มีการคืนยศใดๆ หากท่านไม่ได้เซฟยศเอาไว้**",
                       color=0xdddddd)
         embed.set_image(url="https://cdn.discordapp.com/attachments/1217085743005044786/1219002707172524162/1422685976-5cm-o.jpg?ex=6609b7bd&is=65f742bd&hm=54dbc70bfa7c8869e688cb53c320e5f17ae565f8d788068160920e3dd9245d0a&")
         embed.set_footer(text="Blackmarket!")
