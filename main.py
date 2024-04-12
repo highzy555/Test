@@ -251,7 +251,7 @@ class sellroleView(nextcord.ui.View):
                 userJSON[str(interaction.user.id)]['transaction'].append({
                     "payment": {
                         "roleId": self.value,
-                        "time": str(datetime.datetime.now())
+                        "time": str(datetime.now().strftime("%d/%m/%y %H:%M"))
                     }
                 })
                 json.dump(userJSON, open('./users.json', 'w', encoding='utf-8'), indent=4, ensure_ascii=False)
