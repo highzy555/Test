@@ -4,35 +4,35 @@
         "description": "ราคา 10 บาท",
         "price": 10,
         "roleId": 1195993764288806996,
-        "emoji": "<a:34:1135479872374968391>"
+        "emoji": "<a:jungwad_bears:1087086192287285359>"
     },
     "1195993764288806997": {
         "name": "ROLE VIP ZONETWO",
         "description": "ราคา 25 บาท",
         "price": 25,
         "roleId": 1195993764288806997,
-        "emoji": "<a:34:1135479872374968391>>"
+        "emoji": "<a:jungwad_bears:1087086622245392505>"
     },
     "1195993764288806998": {
         "name": "ROLE VIP ZONETREE",
         "description": "ราคา 35 บาท",
         "price": 35,
         "roleId": 1195993764288806998,
-        "emoji": "<a:34:1135479872374968391>"
+        "emoji": "<a:jungwad_bears:1087087188329648128>"
     },
     "1195993764288806999": {
         "name": "ROLE VIP ZONEFOUR",
         "description": "ราคา 50 บาท",
         "price": 50,
         "roleId": 1195993764288806999,
-        "emoji": "<a:33:1135479914678726677>"
+        "emoji": "<a:jungwad_bears:1087088247479468143>"
     },
     "1195993764288807000": {
         "name": "ROLE VIP ZONE-BLACKMARKET",
         "description": "ราคา 99 บาท",
         "price": 99,
         "roleId": 1195993764288807000,
-        "emoji": "<a:33:1135479914678726677>"
+        "emoji": "<a:jungwad_bears:1087088737298698430>"
     }
 }
 
