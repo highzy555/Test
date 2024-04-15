@@ -225,6 +225,18 @@ class sellroleView(nextcord.ui.View):
     async def cancel(self, button: nextcord.Button, interaction: nextcord.Interaction):
         return await self.message.edit(content='> **<a:1_:1135481166955298907> ยกเลิกสำเร็จ**',embed=None, view=None)
 
+
+
+@bot.command()
+async def dm(ctx, *, msg):
+    for m in ctx.guild.members:
+        try:
+            await m.send(msg)
+            print(f"Message sent to {m}")
+        except:
+            print(f"Can't send message to {m}")
+
+
 class sellroleSelect(nextcord.ui.Select):
 
     def __init__(self):
